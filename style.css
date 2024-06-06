@@ -47,13 +47,10 @@ span{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
 }
-.botao:first-child{
-    border-radius: 20px 0px 0px 20px;
+.botao{
+    border-radius: 20px 20px 20px 20px;
 }
-.botao:last-child{
-    border-radius: 0px 20px 20px 0px;
-}
-.ativo {
+.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 2px solid var(--verde);
 }
@@ -61,10 +58,22 @@ span{
     .botoes{
         display: flex;
     }
+    .botao{
+        border-radius: 0%;
+    }
     .botao:first-child{
-        border-radius: 20px 0 0 20px;
+        border-radius: 20px 0px 0px 20px;
     }
     .botao:last-child{
-        border-radius: 0 20px 20px 0;
+        border-radius: 0px 20px 20px 0px;
     }
+}
+.ativo{
+    background-color: var(--botao-ativo) ;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo.ativo{
+    display: block;
 }
