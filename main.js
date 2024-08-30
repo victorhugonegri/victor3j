@@ -30,6 +30,12 @@ return `Faltam ${dias} dias, ${horas} horas,${minutos} minutos, ${segundos} segu
 }
 
 }
+const tempoUm = calculaTempo(tempoObjetivo1)
+const tempoDois = calculaTempo(tempoObjetivo2)
+const tempoTres = calculaTempo(tempoObjetivo3)
+const tempoQuatro = calculaTempo(tempoObjetivo4)
+
+tempoUm[3]
 
 tempo[0].textContent = calculaTempo(tempoObjetivo1);
 tempo[1].textContent = calculaTempo(tempoObjetivo2);
